@@ -1,0 +1,27 @@
+!!!5
+
+%html
+%head
+  %script(src='jquery-1.7.1.min.js')
+  %script(src='jquery.tmpl.min.js')
+  %script(src='http://connect.facebook.net/en_US/all.js')
+  %script(src='unlike-SOPA.js')
+
+%body
+
+  #fb-root
+
+  :erb
+    <fb:login-button  size='xlarge' onlogin='importLikes()' scope='user_likes'>
+  Import My Likes
+  </fb:login-button>
+
+  #likes
+    %table
+      %th Item Name
+      %th Item url (to unlike)
+
+  
+
+
+
