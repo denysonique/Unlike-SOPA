@@ -1,8 +1,6 @@
 (function() {
   var get_fb_page_url_from_id;
 
-  console.log('hi');
-
   window.fbAsyncInit = function() {
     return FB.init({
       appId: '164440513657532',
@@ -29,9 +27,9 @@
   };
 
   window.importLikes = function() {
-    console.log('likes');
     return FB.api('/me/likes', function(likes) {
       var like, _i, _len, _ref, _results;
+      $('#likes table').fadeIn();
       _ref = likes.data;
       _results = [];
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
