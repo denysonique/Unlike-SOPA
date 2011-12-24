@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html></html>
 <head>
+  <style src='style.css'></style>
   <script src='jquery-1.7.1.min.js'></script>
   <script src='jquery.tmpl.min.js'></script>
   <script src='http://connect.facebook.net/en_US/all.js'></script>
@@ -8,11 +9,13 @@
 </head>
 <body>
   <div id='fb-root'></div>
+<a href="http://github.com/mattn/jquery-github-badge"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+
 <fb:login-button  size='xlarge' onlogin='importLikes()' scope='user_likes'>
   Import My Likes
   </fb:login-button>
   <div id='likes'>
-    <table>
+    <table style='display:none'>
       <th>Item Name</th>
       <th>Item url (to unlike)</th>
     </table>

@@ -2,6 +2,7 @@
 
 %html
 %head
+  %style(src='style.css')
   %script(src='jquery-1.7.1.min.js')
   %script(src='jquery.tmpl.min.js')
   %script(src='http://connect.facebook.net/en_US/all.js')
@@ -12,12 +13,16 @@
   #fb-root
 
   :erb
+    <a href="http://github.com/mattn/jquery-github-badge"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+
     <fb:login-button  size='xlarge' onlogin='importLikes()' scope='user_likes'>
   Import My Likes
   </fb:login-button>
 
+
+
   #likes
-    %table
+    %table(style='display:none')
       %th Item Name
       %th Item url (to unlike)
 
