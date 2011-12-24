@@ -1,0 +1,43 @@
+<html></html>
+<head>
+  <link href='../style.css' rel='stylesheet' />
+  <link href='results.css' rel='stylesheet' />
+  <script src='../jquery-1.7.1.min.js'></script>
+  <script src='../jquery.tmpl.min.js'></script>
+  <script src='http://connect.facebook.net/en_US/all.js'></script>
+  <script src='main.js'></script>
+</head>
+<body>
+  <div id='fb-root'></div>
+  <h2>enter list of companies</h2>
+  <form>
+    <textarea id='data'></textarea>
+  </form>
+  <br />
+  <input id='search' type='submit' value='Search' />
+  <h2>JSON result</h2>
+  <textarea id='output'></textarea>
+<a href="https://github.com/denysonique/Unlike-SOPA"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+
+
+  <div id='results'></div>
+  <script id='result-template' type='text/x-jquery-tmpl'>
+    <div class='result'>
+      <div class='text'>
+        <h2>${name}</h2>
+        <h3>${description}</h3>
+        <p>
+          <b>website:</b>
+          ${website}
+        </p>
+        <p>
+          <b>likes:</b>
+          ${likes}
+        </p>
+      </div>
+      <div class='img'>
+        <img src='${picture}' />
+      </div>
+    </div>
+  </script>
+</body>

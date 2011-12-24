@@ -1,0 +1,54 @@
+%html
+%head
+  %link(href='../style.css' rel='stylesheet')
+  %link(href='results.css' rel='stylesheet')
+
+  %script(src='../jquery-1.7.1.min.js')
+  %script(src='../jquery.tmpl.min.js')
+  %script(src='http://connect.facebook.net/en_US/all.js')
+  %script(src='main.js')
+
+%body
+
+  #fb-root
+
+  %h2 enter list of companies
+  %form
+    %textarea#data
+
+  %br
+  %input#search(type='submit' value='Search')
+
+  %h2 JSON result
+  %textarea#output
+
+  :erb
+    <a href="https://github.com/denysonique/Unlike-SOPA"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+
+
+  #results
+
+  %script#result-template(type="text/x-jquery-tmpl")
+    .result
+      .text
+        %h2 ${name}
+        %h3 ${description}
+
+        %p
+          %b website:
+          ${website}
+
+        %p
+          %b likes:
+          ${likes}
+
+      .img
+        %img(src='${picture}')
+
+
+
+
+  
+
+
+

@@ -1,0 +1,27 @@
+.result {
+  width: 70%;
+  margin: auto;
+  border: 1px solid;
+  padding: 10px;
+  float: left;
+}
+
+#results {
+  //position: relative;
+  text-align: center;
+  
+}
+
+.result div {
+  float: left;
+  text-align: left;
+}
+
+.text {
+  width: 80%;
+}
+
+.img {
+  float: left;
+  width: 20%;
+}
