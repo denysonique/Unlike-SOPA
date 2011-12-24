@@ -34,7 +34,12 @@ SOPA_supporters = [
   'http://www.facebook.com/pages/Estee-Lauder-Companies/110434355650994',
   'http://www.facebook.com/GospelMusicAssociation',
   'http://www.facebook.com/pages/Graphic-Artists-Guild-New-York-Chapter/160352680730',
-  'http://www.facebook.com/pages/Hachette-Book-Group-USA/112451188766509'
-  
+  'http://www.facebook.com/pages/Hachette-Book-Group-USA/112451188766509',
+  'http://www.facebook.com/pages/International-Brotherhood-of-Electrical-Workers-IBEW/113674381983274',
+  'http://www.facebook.com/pages/IBEW-International-Brotherhood-of-Electrical-Workers/111380492220806',
+  'http://www.facebook.com/group.php?gid=2628101722',
+  'http://www.facebook.com/GoINTA',
+  'http://www.facebook.com/pages/International-Union-of-Police-Associations-AFL-CIO-IUPA/100884947370',
+  'http://www.facebook.com/pages/Irell-Manella-LLP/109681522389007'
 ]
 
